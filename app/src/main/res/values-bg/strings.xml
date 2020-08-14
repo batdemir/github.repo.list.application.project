@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ALERT DIALOG MESSAGE -->
+    <string name="message_please_activate_the_permissions_in_the_Applications_app_name_permissions_section">Моля, активирайте разрешенията \ "Приложения> %1$s > Разрешения \".</string>
+    <string name="message_are_you_sure_exit_application">Сигурни ли сте, че искате да излезете от приложението?</string>
+    <string name="message_please_enter_barcode">моля, въведете баркод.</string>
+
+    <!-- EXCEPTION MESSAGE -->
+    <string name="exception_last_process_failed">Последният процес не бе успешен.</string>
+    <string name="exception_system_closed_by_unexpected_error">Система затворена от неочаквана грешка.</string>
+    <string name="exception_please_contact_your_manager">Моля, свържете се с вашия мениджър.</string>
+
+    <!-- TITLE -->
+    <string name="title_home">У дома</string>
+    <string name="title_detail">детайл</string>
+
+    <!-- HOME -->
+    <string name="enter_user_name">Въведете потребителско име</string>
+    <string name="no_items_were_found">Няма намерени елементи.</string>
+
+    <!-- DETAIL -->
+    <string name="language">език: %1$s</string>
+    <string name="license">Разрешително: %1$s</string>
+    <string name="fork_count">Fork Count: %1$s</string>
+    <string name="star_count">Star Count: %1$s</string>
+    <string name="issue_count">Issue Count: %1$s</string>
+    <string name="brach">Branch: %1$s</string>
+    <string name="created_at">Създаден в: %1$s</string>
+    <string name="updated_at">Актуализирано в: %1$s</string>
+    <string name="favorite">любим %1$s</string>
+    <string name="add">добави</string>
+    <string name="delete">Изтрий</string>
+
+</resources>

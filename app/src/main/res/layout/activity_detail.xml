@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.detail.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:padding="@dimen/root_padding"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayoutRepo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgOwnerAvatar"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            app:layout_constraintBottom_toTopOf="@id/txtEditOwnerName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/circle_image_view" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEditOwnerName"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgOwnerAvatar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutRepo"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:padding="@dimen/root_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayoutOwner">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEditLanguage"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            app:layout_constraintBottom_toTopOf="@id/txtEditLicense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEditLicense"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_license"
+            android:drawablePadding="@dimen/marginStart"
+            android:padding="@dimen/padding"
+            app:layout_constraintBottom_toTopOf="@id/txtEditForkCount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtEditLanguage" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEditForkCount"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_fork"
+            android:drawablePadding="@dimen/marginStart"
+            android:padding="@dimen/padding"
+            app:layout_constraintBottom_toTopOf="@id/txtEditStartCount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtEditLicense" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEditStartCount"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_star"
+            android:drawablePadding="@dimen/marginStart"
+            android:padding="@dimen/padding"
+            app:layout_constraintBottom_toTopOf="@id/txtEditIssueCount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtEditForkCount" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEditIssueCount"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_issue"
+            android:drawablePadding="@dimen/marginStart"
+            android:padding="@dimen/padding"
+            app:layout_constraintBottom_toTopOf="@id/txtEditDefaultBranch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtEditStartCount" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEditDefaultBranch"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_branch"
+            android:drawablePadding="@dimen/marginStart"
+            android:padding="@dimen/padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtEditIssueCount" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEditCreatedAt"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            app:layout_constraintBottom_toTopOf="@id/txtEditUpdatedAt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtEditDefaultBranch" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEditUpdatedAt"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtEditCreatedAt" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_favorite"
+            app:iconGravity="start"
+            app:iconSize="24sp"
+            app:iconTint="@color/primaryColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtEditUpdatedAt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,2 @@
+include ':app', ':api', ':entity', ':utilities'
+rootProject.name='github.repo.list'

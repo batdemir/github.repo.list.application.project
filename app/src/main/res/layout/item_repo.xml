@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootItemRepo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground"
+    app:cardCornerRadius="0sp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/root_padding">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEditRepoName"
+            style="@style/item_repo_header_text_style"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/tableLayout"
+            app:layout_constraintEnd_toStartOf="@id/imgFavorite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginStart"
+            android:layout_marginBottom="@dimen/marginStart"
+            android:stretchColumns="*"
+            app:layout_constraintBottom_toTopOf="@id/txtEditLastUpdatedDate"
+            app:layout_constraintEnd_toStartOf="@id/imgFavorite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtEditRepoName">
+
+            <TableRow tools:ignore="UselessParent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtEditLanguage"
+                    style="@style/item_repo_detail_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtEditLicense"
+                    style="@style/item_repo_detail_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_license"
+                    android:drawablePadding="@dimen/marginStart" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtEditForkCount"
+                    style="@style/item_repo_detail_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_fork"
+                    android:drawablePadding="@dimen/marginStart" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtEditStartCount"
+                    style="@style/item_repo_detail_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_star"
+                    android:drawablePadding="@dimen/marginStart" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtEditIssueCount"
+                    style="@style/item_repo_detail_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_issue"
+                    android:drawablePadding="@dimen/marginStart" />
+            </TableRow>
+        </TableLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEditLastUpdatedDate"
+            style="@style/item_repo_detail_text_style"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:inputType="datetime"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imgFavorite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tableLayout" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgFavorite"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:src="@drawable/ic_favorite"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tableLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

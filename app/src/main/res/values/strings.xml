@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name" translatable="false">Github Repo</string>
+    <string name="data_wedge_intent_filter_action" translatable="false">com.aurabilisim.barcode.ACTION</string>
+    <string name="data_wedge_intent_key_data" translatable="false">com.symbol.datawedge.data_string</string>
+
+    <!-- ALERT DIALOG KEYS -->
+    <string name="alert_dialog_key_exception" translatable="false">exception</string>
+    <string name="alert_dialog_key_permission" translatable="false">permission</string>
+    <string name="alert_dialog_key_barcode_dialog" translatable="false">barcodeDialog</string>
+    <string name="alert_dialog_key_exit" translatable="false">exit</string>
+
+    <!-- GENERAL -->
+    <string name="dot" translatable="false">\t:\t</string>
+    <string name="barcode_receive" translatable="false">Barcode Receive</string>
+
+    <!-- ALERT DIALOG MESSAGE -->
+    <string name="message_please_activate_the_permissions_in_the_Applications_app_name_permissions_section">Please, active the permissions \" Applications > %1$s > Permissions\" section.</string>
+    <string name="message_are_you_sure_exit_application">Are you sure you want to exit the application?</string>
+    <string name="message_please_enter_barcode">Please enter a barcode.</string>
+
+    <!-- EXCEPTION MESSAGE -->
+    <string name="exception_last_process_failed">Last process failed.</string>
+    <string name="exception_system_closed_by_unexpected_error">System closed by unexpected error.</string>
+    <string name="exception_please_contact_your_manager">Please contact your manager.</string>
+
+    <!-- TITLE -->
+    <string name="title_home">Home</string>
+    <string name="title_detail">Detail</string>
+
+    <!-- HOME -->
+    <string name="enter_user_name">Enter User Name</string>
+    <string name="no_items_were_found">No items were found.</string>
+
+    <!-- DETAIL -->
+    <string name="language">Language: %1$s</string>
+    <string name="license">License: %1$s</string>
+    <string name="fork_count">Fork Count: %1$s</string>
+    <string name="star_count">Star Count: %1$s</string>
+    <string name="issue_count">Issue Count: %1$s</string>
+    <string name="brach">Branch: %1$s</string>
+    <string name="created_at">Created At: %1$s</string>
+    <string name="updated_at">Updated At: %1$s</string>
+    <string name="favorite">Favorite %1$s</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+
+</resources>

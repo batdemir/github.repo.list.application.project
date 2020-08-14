@@ -1,0 +1,47 @@
+<resources>
+
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TableTwoItemStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">@dimen/item_two_width</item>
+        <item name="android:maxWidth">@dimen/item_two_width</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TableThreeItemStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">@dimen/item_three_width</item>
+        <item name="android:maxWidth">@dimen/item_three_width</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TableFourItemStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">@dimen/item_four_width</item>
+        <item name="android:maxWidth">@dimen/item_four_width</item>
+    </style>
+
+    <style name="TableFiveItemStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">@dimen/item_five_width</item>
+        <item name="android:maxWidth">@dimen/item_five_width</item>
+    </style>
+
+    <style name="item_repo_header_text_style" parent="android:TextAppearance.DeviceDefault">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="item_repo_detail_text_style" parent="android:TextAppearance.DeviceDefault">
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="circle_image_view">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

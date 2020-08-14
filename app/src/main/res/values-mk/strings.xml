@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ALERT DIALOG MESSAGE -->
+    <string name="message_please_activate_the_permissions_in_the_Applications_app_name_permissions_section">Ве молиме, активирајте го делот за дозволи \"Апликации> %1$s > Дозволи \"</string>
+    <string name="message_are_you_sure_exit_application">Дали сте сигурни дека сакате да излезете од апликацијата?</string>
+    <string name="message_please_enter_barcode">Ве молиме внесете бар-код.</string>
+
+    <!-- EXCEPTION MESSAGE -->
+    <string name="exception_last_process_failed">Последниот процес не успеа.</string>
+    <string name="exception_system_closed_by_unexpected_error">Системот затворен од неочекувана грешка.</string>
+    <string name="exception_please_contact_your_manager">Ве молиме контактирајте го вашиот менаџер.</string>
+
+    <!-- TITLE -->
+    <string name="title_home">Главен монитор</string>
+    <string name="title_detail">Детал</string>
+
+    <!-- HOME -->
+    <string name="enter_user_name">Внесете корисничко име</string>
+    <string name="no_items_were_found">Не се пронајдени предмети.</string>
+
+    <!-- DETAIL -->
+    <string name="language">Јазик: %1$s</string>
+    <string name="license">Лиценца: %1$s</string>
+    <string name="fork_count">Fork Count: %1$s</string>
+    <string name="star_count">Star Count: %1$s</string>
+    <string name="issue_count">Issue Count: %1$s</string>
+    <string name="brach">Branch: %1$s</string>
+    <string name="created_at">Создадено на: %1$s</string>
+    <string name="updated_at">Ажурирано на: %1$s</string>
+    <string name="favorite">Омилен %1$s</string>
+    <string name="add">Додај</string>
+    <string name="delete">Избриши</string>
+
+</resources>
