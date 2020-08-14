@@ -23,6 +23,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/api/src/main/java/com/batdemir/api/OperationTypes.java">
           <value>
             <set />
@@ -199,6 +204,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/menu/favorite_menu.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml">
           <value>
             <set />
           </value>
