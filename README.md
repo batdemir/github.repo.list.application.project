@@ -4,7 +4,7 @@
 It is an application designed to easily browse their repository on Github. On the "Home" screen, 
 which is the first screen of the application, you can enter the username of the user whose repos 
 you want to browse, and see all the "Public" repositories. And also you can favorite or un-favorite 
-selected repository.
+selected repository.This application also supports multi-language English, Turkish, Bulgarian, Macedonian.
 ## Screens
 ![Main Screen Empty](/screens/Screenshot_20200814_205539_Github_Repo.png) ![Main Screen Search](/screens/Screenshot_20200814_205602_Github_Repo.png)
 ![Main Screen Result](/screens/Screenshot_20200814_205609_Github_Repo.png) ![Detail Screen](/screens/Screenshot_20200814_205616_Github_Repo.png)
